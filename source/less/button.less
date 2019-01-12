@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 1px;
+  background-color: @pink;
+  border-radius: 30px;
+  &:hover {
+    color: @pink;
+    background-color: @white;
+  }
+}
+
+@media @tablet {
+  .button {
+    min-width: 200px;
+  }
+
+  .button__wrap {
+    text-align: left;
+  }
+}

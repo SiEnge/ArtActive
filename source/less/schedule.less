@@ -1,0 +1,155 @@
+.schedule {
+  min-height: 685px;
+  padding-top: 3px;
+}
+
+.schedule__list {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule__list::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 29px;
+  z-index: 1;
+  width: 164px;
+  height: 454px;
+  background-image: url("../img/ser_arrow_mobile.png");
+  background-repeat: no-repeat;
+}
+
+.schedule__text {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.schedule__item {
+  position: absolute;
+  z-index: 5;
+  width: 130px;
+  padding-top: 106px;
+  list-style: none;
+  text-align: center;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    top: 0;
+    left: 50%;
+    margin-left: -53px;
+  }
+}
+
+.schedule__item--book {
+  top: 0;
+  left: 50%;
+  margin-left: -65px;
+  &::before {
+    background-image: url("../img/ser_book_mobile.jpg");
+  }
+}
+
+.schedule__item--tab {
+  top: 198px;
+  left: 170px;
+  &::before {
+    background-image: url("../img/ser_tab_mobile.jpg");
+  }
+}
+
+.schedule__item--paper{
+  top: 292px;
+  left: -1px;
+  &::before {
+    background-image: url("../img/ser_paper_mobile.jpg");
+  }
+}
+
+.schedule__item--ship{
+  top: 530px;
+  left: 50%;
+  margin-left: -63px;
+  &::before {
+    background-image: url("../img/ser_ship_mobile.jpg");
+  }
+}
+
+@media @tablet {
+  .schedule {
+    min-height: 540px;
+    margin-top: 38px;
+  }
+
+  .schedule__list::after {
+    top: 56px;
+    right: 125px;
+    width: 484px;
+    height: 277px;
+    background-image: url("../img/ser_arrow_tablet.png");
+  }
+
+  .schedule__item {
+    width: 180px;
+  }
+
+  .schedule__item--book {
+    left: 154px;
+    margin-left: auto;
+  }
+
+  .schedule__item--tab {
+    top: 97px;
+    left: 544px;
+  }
+
+  .schedule__item--paper {
+    top: 180px;
+    left: -16px;
+  }
+
+  .schedule__item--ship {
+    top: 300px;
+    left: 357px;
+    margin-left: auto;
+  }
+}
+@media @desktop {
+  .schedule {
+    width: 555px;
+    margin-top: 0;
+  }
+
+  .schedule__list::after {
+    top: 67px;
+    right: 132px;
+    width: 316px;
+    height: 269px;
+    background-image: url("../img/ser_arrow_desktop.png");
+  }
+
+  .schedule__item--book {
+    left: 149px;
+  }
+
+  .schedule__item--tab {
+    top: 140px;
+    left: 359px;
+  }
+
+  .schedule__item--paper {
+    top: 180px;
+    left: -22px;
+  }
+
+  .schedule__item--ship {
+    top: 330px;
+    left: 188px;
+  }
+}

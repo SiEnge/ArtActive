@@ -1,0 +1,169 @@
+.form-request {
+  padding-bottom: 84px;
+}
+
+.form-request__form {
+  position: relative;
+  padding: 40px 25px 57px;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+  font-style: normal;
+  background-color: @violet;
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(81, 8, 86, 0.3);
+}
+
+.form-request__form:hover {
+  box-shadow: 0 12px 32px rgba(81, 8, 86, 0.8);
+}
+
+.form-request__form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 95px;
+  height: 100px;
+  background-image: url("../img/form_ques_mobile.png");
+  background-position: left bottom;
+}
+
+.form-request__text {
+  margin: 0 0 3px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.form-request__fielset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-request__legend {
+  width: 190px;
+  padding-bottom: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form-request__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 34px 15px 10px;
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+  background-color: @violet;
+  border: none;
+  border-bottom: 1px solid @white;
+}
+
+.form-request__input::-webkit-input-placeholder {
+  color: @white;
+}
+
+.form-request__input::-moz-placeholder {
+  color: @white;
+}
+
+.form-request__input:-moz-placeholder {
+  color: @white;
+}
+
+.form-request__input:-ms-input-placeholder {
+  color: @white;
+}
+
+.form-request__button {
+  width: 100%;
+  margin-top: 40px;
+  border: none;
+}
+@media @tablet {
+  .form-request {
+    position: relative;
+    padding-bottom: 102px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 85px;
+      background-color: @violet;
+      z-index: 10;
+    }
+
+    &::before {
+      bottom: -20px;
+      left: 570px;
+    }
+
+    &::after {
+      bottom: -65px;
+      left: 585px;
+    }
+  }
+
+  .form-request__form {
+    padding-right: 30px;
+    padding-left: 37px;
+    padding-bottom: 50px;
+  }
+
+  .form-request__form::after {
+    width: 212px;
+    height: 168px;
+    background-image: url("../img/form_ques_tablet.png");
+  }
+
+  .form-request__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form-request__input {
+    margin-right: 50px;
+  }
+
+  .form-request__legend {
+    padding-bottom: 10px;
+    width: 420px;
+    letter-spacing: 0.3px;
+  }
+
+  .form-request__button {
+    width: auto;
+    padding-left: 20px;
+    position: relative;
+    z-index: 10;
+    margin-top: 0;
+  }
+}
+@media @desktop {
+  .form-request {
+    padding-bottom: 170px;
+  }
+
+  .form-request__form {
+    padding-left: 312px;
+    padding-right: 70px;
+  }
+
+  .form-request__form::after {
+    width: 241px;
+    height: 219px;
+    right: auto;
+    left: 0;
+    background-image: url("../img/form_ques_desktop.png");
+  }
+
+  .form-request__input {
+    margin-right: 40px;
+  }
+}

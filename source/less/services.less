@@ -1,0 +1,394 @@
+.services {
+  padding-top: 64px;
+  background-color: @light-violet;
+}
+
+.services__title {
+  margin-bottom: 38px;
+}
+
+.services__lead {
+  position: relative;
+  z-index: 100;
+}
+
+.services__lead::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -10;
+  width: 151px;
+  height: 192px;
+  margin-top: -115px;
+  background-repeat: no-repeat;
+}
+
+.services__text {
+  margin-bottom: 24px;
+}
+
+.services__list {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.services__one {
+  background-color: @light-violet;
+  padding-bottom: 73px;
+
+  .services__lead {
+    margin-bottom: 43px;
+  }
+
+  .services__lead::after {
+    background-image: url("../img/one.png");
+  }
+}
+
+.services__second {
+  padding-top: 70px;
+  padding-bottom: 250px;
+  background-color: @white;
+  background-image: url("../img/divan_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom 53px;
+
+  .services__lead {
+    margin-bottom: 38px;
+  }
+
+  .services__lead::after {
+    background-image: url("../img/second.png");
+  }
+}
+
+.services__third {
+  background-color: @light-violet;
+  padding-bottom: 30px;
+  padding-top: 67px;
+}
+
+.services__third-wrap {
+  position: relative;
+  padding-bottom: 252px;
+
+  .services__lead {
+    margin-bottom: 48px;
+  }
+
+  .services__lead::after {
+    background-image: url("../img/third.png");
+  }
+}
+
+.services__third-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  width: 304px;
+  height: 255px;
+  background-image: url("../img/doki_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.services__slider {
+  height: 245px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+
+.services__slide-wrap {
+  width: 290px;
+  height: auto;
+  margin: 0;
+
+  img {
+    border-radius: 10px;
+    box-shadow: 0 20px 46px @shadow;
+  }
+}
+
+.services__slide-text {
+  margin-top: 7px;
+  font-size: 13px;
+}
+
+.services__button {
+  margin-top: 45px;
+}
+
+.services__block {
+  padding-bottom: 60px;
+}
+@media @tablet {
+  .services {
+    padding-top: 75px;
+  }
+
+  .services__title {
+    margin-bottom: 56px;
+  }
+
+  .services__lead::after {
+    margin-top: -105px;
+    margin-bottom: 55px;
+  }
+
+  .services__one {
+    position: relative;
+    padding-bottom: 53px;
+
+    .services__lead {
+      margin-bottom: 54px;
+    }
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 85px;
+      background-color: @violet;
+      z-index: 10;
+    }
+
+    &::before {
+      bottom: -20px;
+      left: 350px;
+    }
+
+    &::after {
+      bottom: -65px;
+      left: 365px;
+    }
+  }
+
+  .services__second {
+    position: relative;
+    padding-top: 85px;
+    padding-bottom: 400px;
+    background-image: url("../img/divan_tablet.jpg");
+    background-position: right bottom 53px;
+
+    .services__lead {
+      width: 430px;
+      margin-bottom: 54px;
+    }
+
+    .services__text {
+      width: 550px;
+    }
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 85px;
+      background-color: @violet;
+      z-index: 10;
+    }
+
+    &::before {
+      bottom: -20px;
+      left: 350px;
+    }
+
+    &::after {
+      bottom: -65px;
+      left: 365px;
+    }
+  }
+
+  .services__third {
+    position: relative;
+    padding-top: 105px;
+    padding-bottom: 85px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 85px;
+      background-color: @violet;
+      z-index: 10;
+    }
+
+    &::before {
+      bottom: -20px;
+      left: 350px;
+    }
+
+    &::after {
+      bottom: -65px;
+      left: 365px;
+    }
+  }
+
+  .services__third-wrap {
+    z-index: 10;
+    padding-bottom: 8px;
+
+    .services__lead {
+      width: 430px;
+      margin-bottom: 46px;
+    }
+  }
+
+  .services__third-wrap::after {
+    right: -44px;
+    bottom: -370px;
+    left: auto;
+    z-index: -10;
+    width: 381px;
+    height: 369px;
+    background-image: url("../img/doki_tablet.png");
+  }
+
+  .services__slider {
+    height: 505px;
+    padding-top: 70px;
+  }
+
+  .services__slide-wrap {
+    width: 720px;
+  }
+
+  .services__slide-text {
+    margin-top: 32px;
+    text-align: right;
+  }
+
+  .services__button {
+    max-width: 210px;
+  }
+}
+@media @desktop {
+  .services {
+    padding-top: 97px;
+    padding-bottom: 20px;
+  }
+
+  .services__title {
+    margin-bottom: 76px;
+  }
+
+  .services__lead::after {
+    margin-top: -110px;
+    margin-left: -100px;
+  }
+
+  .services__one {
+    padding-bottom: 185px;
+
+    .services__lead {
+      margin-bottom: 44px;
+    }
+
+    &::before {
+      left: 585px;
+    }
+
+    &::after {
+      left: 600px;
+    }
+  }
+
+  .services__one {
+    display: grid;
+    grid-template-columns: 570px 570px;
+  }
+
+  .services__one-wrap {
+    width: 500px;
+    grid-column: 1;
+  }
+
+  .services__second {
+    padding-top: 129px;
+    padding-bottom: 567px;
+    background-image: url("../img/divan_desktop.jpg");
+    background-position: center bottom 96px;
+
+    .services__lead {
+      margin-bottom: 43px;
+    }
+
+    .services__text {
+      margin-bottom: 56px;
+    }
+
+    &::before {
+      left: 585px;
+    }
+
+    &::after {
+      left: 600px;
+    }
+  }
+
+  .services__second-wrap {
+    width: 555px;
+    margin-left: auto;
+  }
+
+  .services__third {
+    padding-top: 137px;
+    padding-bottom: 106px;
+
+    .services__lead {
+      margin-bottom: 43px;
+    }
+
+    &::before {
+      left: 585px;
+    }
+
+    &::after {
+      left: 600px;
+    }
+  }
+
+  .services__item--third {
+    padding-top: 137px;
+  }
+
+  .services__third-wrap {
+    width: 560px;
+  }
+
+  .services__third-wrap::after {
+    right: -678px;
+    bottom: -77px;
+    left: auto;
+    width: 648px;
+    height: 544px;
+    background-image: url("../img/doki_desktop.png");
+  }
+
+  .services__slider {
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 570px;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .services__slide-wrap {
+    width: 570px;
+    padding-top: 0;
+  }
+
+  .services__slide-text {
+    margin-top: 29px;
+    margin-right: 138px;
+  }
+
+  .services__form {
+    grid-row: 2;
+  }
+}
