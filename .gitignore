@@ -10,5 +10,6 @@
 /maket
 node_modules/
 npm-debug.*
+package-lock.json
 source/css/*.css
 Thumbs.db

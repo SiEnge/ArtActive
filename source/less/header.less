@@ -5,16 +5,13 @@
   font-size: 18px;
   color: @white;
   background-color: @violet;
+  background-image: url("../img/header_mobile.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .header__nav {
   position: relative;
-}
-
-.header__wrap {
-  background-image: url("../img/header_mobile.png");
-  background-repeat: no-repeat;
-  background-position: top -60px center;
 }
 
 .header__block {
@@ -61,13 +58,13 @@
     padding-right: 30px;
     padding-bottom: 92px;
     padding-left: 30px;
+    background-image: url("../img/header_tablet.png");
+    background-position: bottom center;
   }
 
   .header__wrap {
     display: flex;
     justify-content: flex-end;
-    background-image: url("../img/header_tablet.png");
-    background-position: top -64px center;
   }
 
   .header__block {
@@ -98,6 +95,7 @@
   .header {
     padding-top: 60px;
     padding-bottom: 218px;
+    background-image: url("../img/header_desktop.png");
   }
 
   .header__call--hidden {
@@ -113,11 +111,7 @@
   .header__call-phone {
     margin: 5px 0 0;
   }
-  // .header__nav {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
+
   .header__call-button {
     display: block;
     padding: 7px 23px 8px;
@@ -137,11 +131,6 @@
       color: @violet;
       background-color: @white;
     }
-  }
-
-  .header__wrap {
-    background-image: url("../img/header_desktop.png");
-    background-position: top -106px center;
   }
 
   .header__block {
